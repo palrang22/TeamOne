@@ -32,4 +32,7 @@ class KSHViewController: UIViewController {
     @IBAction func backButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    var hi = "hello"
+    let hello = "hii"
 }
