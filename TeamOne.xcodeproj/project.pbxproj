@@ -23,6 +23,8 @@
 		E76BB67B2C042B9A00F166D1 /* IHJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BB67A2C042B9A00F166D1 /* IHJViewController.swift */; };
 		E76BB67D2C042E5A00F166D1 /* KSHStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76BB67C2C042E5A00F166D1 /* KSHStoryboard.storyboard */; };
 		E76BB67F2C042E6800F166D1 /* KSHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BB67E2C042E6800F166D1 /* KSHViewController.swift */; };
+		E7E54FF12C05B36A00B4CD0C /* KSHSegController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E54FF02C05B36A00B4CD0C /* KSHSegController.swift */; };
+		E7E54FF32C05B39000B4CD0C /* KSHDexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E54FF22C05B39000B4CD0C /* KSHDexViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		E76BB67A2C042B9A00F166D1 /* IHJViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHJViewController.swift; sourceTree = "<group>"; };
 		E76BB67C2C042E5A00F166D1 /* KSHStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KSHStoryboard.storyboard; sourceTree = "<group>"; };
 		E76BB67E2C042E6800F166D1 /* KSHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSHViewController.swift; sourceTree = "<group>"; };
+		E7E54FF02C05B36A00B4CD0C /* KSHSegController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSHSegController.swift; sourceTree = "<group>"; };
+		E7E54FF22C05B39000B4CD0C /* KSHDexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSHDexViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 		E76BB6572C0427FE00F166D1 /* TeamOne */ = {
 			isa = PBXGroup;
 			children = (
+				E7E54FEF2C05B2DC00B4CD0C /* KSH */,
 				E76BB6582C0427FE00F166D1 /* AppDelegate.swift */,
 				E76BB65A2C0427FE00F166D1 /* SceneDelegate.swift */,
 				E76BB65C2C0427FE00F166D1 /* MainViewController.swift */,
@@ -83,7 +88,6 @@
 				E76BB6762C042B7B00F166D1 /* KLIViewController.swift */,
 				E76BB67A2C042B9A00F166D1 /* IHJViewController.swift */,
 				E76BB6742C042B6100F166D1 /* KSBViewController.swift */,
-				E76BB67E2C042E6800F166D1 /* KSHViewController.swift */,
 				E76BB65E2C0427FE00F166D1 /* Main.storyboard */,
 				E76BB66C2C04297A00F166D1 /* JSHStoryboard.storyboard */,
 				E76BB6702C0429A200F166D1 /* KLIStoryboard.storyboard */,
@@ -95,6 +99,16 @@
 				E76BB6662C04280100F166D1 /* Info.plist */,
 			);
 			path = TeamOne;
+			sourceTree = "<group>";
+		};
+		E7E54FEF2C05B2DC00B4CD0C /* KSH */ = {
+			isa = PBXGroup;
+			children = (
+				E76BB67E2C042E6800F166D1 /* KSHViewController.swift */,
+				E7E54FF02C05B36A00B4CD0C /* KSHSegController.swift */,
+				E7E54FF22C05B39000B4CD0C /* KSHDexViewController.swift */,
+			);
+			path = KSH;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +190,11 @@
 				E76BB6792C042B8600F166D1 /* JSHViewController.swift in Sources */,
 				E76BB65D2C0427FE00F166D1 /* MainViewController.swift in Sources */,
 				E76BB6772C042B7B00F166D1 /* KLIViewController.swift in Sources */,
+				E7E54FF32C05B39000B4CD0C /* KSHDexViewController.swift in Sources */,
 				E76BB67B2C042B9A00F166D1 /* IHJViewController.swift in Sources */,
 				E76BB6752C042B6100F166D1 /* KSBViewController.swift in Sources */,
 				E76BB6592C0427FE00F166D1 /* AppDelegate.swift in Sources */,
+				E7E54FF12C05B36A00B4CD0C /* KSHSegController.swift in Sources */,
 				E76BB65B2C0427FE00F166D1 /* SceneDelegate.swift in Sources */,
 				E76BB67F2C042E6800F166D1 /* KSHViewController.swift in Sources */,
 			);
