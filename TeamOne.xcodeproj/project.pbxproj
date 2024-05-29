@@ -111,8 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				E76BB67E2C042E6800F166D1 /* KSHViewController.swift */,
-				E7E54FF02C05B36A00B4CD0C /* KSHSegController.swift */,
 				E7E54FF22C05B39000B4CD0C /* KSHDexViewController.swift */,
+				E7E54FF02C05B36A00B4CD0C /* KSHSegController.swift */,
 			);
 			path = KSH;
 			sourceTree = "<group>";
