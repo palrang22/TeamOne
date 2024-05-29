@@ -27,6 +27,7 @@ class KSHDexViewController: UIViewController, UIPageViewControllerDelegate{
         avatarsIdx = 0
         avatarImage.image = UIImage(named: avatars[avatarsIdx])
         configtag()
+        configSegController()
     }
     
     @IBAction func turnRightButton(_ sender: Any) {
@@ -57,6 +58,11 @@ class KSHDexViewController: UIViewController, UIPageViewControllerDelegate{
         tag2.layer.shadowRadius = 2
         tag2.layer.shadowOpacity = 0.3
         tag2.layer.shadowOffset = CGSize(width: 1, height: 1)
+    }
+    
+    private func configSegController(){
+        segmentedControl.layer.cornerRadius = 20
+        segmentedControl.clipsToBounds = true
     }
     
     private func loadPageViewController() {
