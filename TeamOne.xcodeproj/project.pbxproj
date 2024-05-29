@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5BDFD752C06F83600AE58B4 /* TeamOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BDFD732C06F83500AE58B4 /* TeamOneCollectionViewCell.swift */; };
+		E5BDFD762C06F83600AE58B4 /* TeamOneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BDFD742C06F83600AE58B4 /* TeamOneList.swift */; };
 		E76BB6592C0427FE00F166D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BB6582C0427FE00F166D1 /* AppDelegate.swift */; };
 		E76BB65B2C0427FE00F166D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BB65A2C0427FE00F166D1 /* SceneDelegate.swift */; };
 		E76BB65D2C0427FE00F166D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BB65C2C0427FE00F166D1 /* MainViewController.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5BDFD732C06F83500AE58B4 /* TeamOneCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamOneCollectionViewCell.swift; path = TeamOne/TeamOneCollectionViewCell.swift; sourceTree = "<group>"; };
+		E5BDFD742C06F83600AE58B4 /* TeamOneList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamOneList.swift; path = TeamOne/TeamOneList.swift; sourceTree = "<group>"; };
 		E76BB6552C0427FE00F166D1 /* TeamOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76BB6582C0427FE00F166D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E76BB65A2C0427FE00F166D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		E76BB64C2C0427FE00F166D1 = {
 			isa = PBXGroup;
 			children = (
+				E5BDFD732C06F83500AE58B4 /* TeamOneCollectionViewCell.swift */,
+				E5BDFD742C06F83600AE58B4 /* TeamOneList.swift */,
 				E76BB6572C0427FE00F166D1 /* TeamOne */,
 				E76BB6562C0427FE00F166D1 /* Products */,
 			);
@@ -188,8 +194,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E76BB6792C042B8600F166D1 /* JSHViewController.swift in Sources */,
+				E5BDFD762C06F83600AE58B4 /* TeamOneList.swift in Sources */,
 				E76BB65D2C0427FE00F166D1 /* MainViewController.swift in Sources */,
 				E76BB6772C042B7B00F166D1 /* KLIViewController.swift in Sources */,
+				E5BDFD752C06F83600AE58B4 /* TeamOneCollectionViewCell.swift in Sources */,
 				E7E54FF32C05B39000B4CD0C /* KSHDexViewController.swift in Sources */,
 				E76BB67B2C042B9A00F166D1 /* IHJViewController.swift in Sources */,
 				E76BB6752C042B6100F166D1 /* KSBViewController.swift in Sources */,
@@ -274,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -331,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
