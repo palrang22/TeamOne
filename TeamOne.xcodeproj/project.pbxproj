@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C494A3CD2C05A0AD0065CB6D /* KakaoTalk_Photo_2024-05-28-14-18-04.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C494A3CC2C05A0AD0065CB6D /* KakaoTalk_Photo_2024-05-28-14-18-04.jpeg */; };
 		E76BB6592C0427FE00F166D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BB6582C0427FE00F166D1 /* AppDelegate.swift */; };
 		E76BB65B2C0427FE00F166D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BB65A2C0427FE00F166D1 /* SceneDelegate.swift */; };
 		E76BB65D2C0427FE00F166D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BB65C2C0427FE00F166D1 /* MainViewController.swift */; };
@@ -27,8 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C494A3CB2C05A07F0065CB6D /* KakaoTalk_Photo_2024-05-28-14-00-11.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KakaoTalk_Photo_2024-05-28-14-00-11.jpeg"; sourceTree = "<group>"; };
-		C494A3CC2C05A0AD0065CB6D /* KakaoTalk_Photo_2024-05-28-14-18-04.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "KakaoTalk_Photo_2024-05-28-14-18-04.jpeg"; path = "../../../../../Downloads/KakaoTalk_Photo_2024-05-28-14-18-04.jpeg"; sourceTree = "<group>"; };
 		E76BB6552C0427FE00F166D1 /* TeamOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76BB6582C0427FE00F166D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E76BB65A2C0427FE00F166D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,15 +57,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C494A3CA2C05A06E0065CB6D /* Solby image */ = {
-			isa = PBXGroup;
-			children = (
-				C494A3CB2C05A07F0065CB6D /* KakaoTalk_Photo_2024-05-28-14-00-11.jpeg */,
-				C494A3CC2C05A0AD0065CB6D /* KakaoTalk_Photo_2024-05-28-14-18-04.jpeg */,
-			);
-			path = "Solby image";
-			sourceTree = "<group>";
-		};
 		E76BB64C2C0427FE00F166D1 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +89,6 @@
 				E76BB6702C0429A200F166D1 /* KLIStoryboard.storyboard */,
 				E76BB66E2C04299400F166D1 /* IHJStoryboard.storyboard */,
 				E76BB6722C0429B300F166D1 /* KSBStoryboard.storyboard */,
-				C494A3CA2C05A06E0065CB6D /* Solby image */,
 				E76BB67C2C042E5A00F166D1 /* KSHStoryboard.storyboard */,
 				E76BB6612C04280100F166D1 /* Assets.xcassets */,
 				E76BB6632C04280100F166D1 /* LaunchScreen.storyboard */,
@@ -171,7 +158,6 @@
 				E76BB6622C04280100F166D1 /* Assets.xcassets in Resources */,
 				E76BB6732C0429B300F166D1 /* KSBStoryboard.storyboard in Resources */,
 				E76BB66F2C04299400F166D1 /* IHJStoryboard.storyboard in Resources */,
-				C494A3CD2C05A0AD0065CB6D /* KakaoTalk_Photo_2024-05-28-14-18-04.jpeg in Resources */,
 				E76BB66D2C04297A00F166D1 /* JSHStoryboard.storyboard in Resources */,
 				E76BB6652C04280100F166D1 /* Base in Resources */,
 				E76BB6712C0429A200F166D1 /* KLIStoryboard.storyboard in Resources */,
