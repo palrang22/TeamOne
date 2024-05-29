@@ -45,6 +45,7 @@ class JSHViewController: UIViewController {
     
     
     
+    
     @IBAction func openWebsite(_ sender: UIButton) {
         if let url = URL(string:"https://velog.io/@apam144/posts"){
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
