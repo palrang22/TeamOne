@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,7 +40,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiB-iH-Vg9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiB-iH-Vg9">
                                 <rect key="frame" x="136" y="397.33333333333331" width="120" height="38"/>
                                 <color key="tintColor" systemColor="systemPinkColor"/>
                                 <state key="normal" title="Button"/>
@@ -51,7 +51,7 @@
                                     <action selector="buttonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SYH-fu-bwC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="(ENTP)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1Z-pL-4WX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ENTP)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1Z-pL-4WX">
                                 <rect key="frame" x="214" y="323" width="67.666666666666686" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -63,10 +63,13 @@
                         <constraints>
                             <constraint firstItem="ogT-Sd-kU6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="2z9-JJ-ybC"/>
                             <constraint firstItem="W23-Be-urx" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="3b0-JA-XLX"/>
+                            <constraint firstItem="ZiB-iH-Vg9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="136" id="4hc-o1-6w4"/>
                             <constraint firstItem="s1Z-pL-4WX" firstAttribute="leading" secondItem="ogT-Sd-kU6" secondAttribute="trailing" constant="10" id="6tS-fb-0B1"/>
                             <constraint firstItem="W23-Be-urx" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="GGu-V3-l9Y"/>
                             <constraint firstItem="ZiB-iH-Vg9" firstAttribute="top" secondItem="it0-HD-Aot" secondAttribute="bottom" constant="10" id="GWY-NW-jij"/>
                             <constraint firstItem="it0-HD-Aot" firstAttribute="top" secondItem="ogT-Sd-kU6" secondAttribute="bottom" constant="15" id="GoW-0e-ejd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZiB-iH-Vg9" secondAttribute="trailing" constant="137" id="KFl-md-jPk"/>
+                            <constraint firstItem="s1Z-pL-4WX" firstAttribute="top" secondItem="W23-Be-urx" secondAttribute="bottom" constant="34" id="PvK-NJ-Occ"/>
                             <constraint firstItem="it0-HD-Aot" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="R2P-Xo-CjO"/>
                             <constraint firstItem="ogT-Sd-kU6" firstAttribute="top" secondItem="W23-Be-urx" secondAttribute="bottom" constant="15" id="qkr-bf-2Ot"/>
                         </constraints>
