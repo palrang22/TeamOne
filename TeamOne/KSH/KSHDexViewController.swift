@@ -24,7 +24,7 @@ class KSHDexViewController: UIViewController, UIPageViewControllerDelegate{
         configSegControl()
         avatarsIdx = 0
         avatarImage.image = UIImage(named: avatars[avatarsIdx])
-        configSegController()
+        //configSegController()
         configViewController()
     }
     
@@ -43,10 +43,10 @@ class KSHDexViewController: UIViewController, UIPageViewControllerDelegate{
         avatarImage.image = UIImage(named: avatars[avatarsIdx])
     }
     
-    private func configSegController(){
-        segmentedControl.layer.cornerRadius = 20
-        segmentedControl.clipsToBounds = true
-    }
+//    private func configSegController(){
+//        segmentedControl.layer.cornerRadius = 20
+//        segmentedControl.clipsToBounds = true
+//    }
     
     private func configViewController() {
         containerView.layer.cornerRadius = 10

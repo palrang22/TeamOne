@@ -14,7 +14,9 @@ class KSHViewController: UIViewController, AVAudioPlayerDelegate {
     var battleAudio : AVAudioPlayer?
     var catchAudio : AVAudioPlayer?
     var winAudio : AVAudioPlayer?
+    var count = 0
     
+    @IBOutlet weak var blackView: UIView!
     @IBOutlet weak var messageImg: UIImageView!
     
     override func viewDidLoad() {
@@ -24,14 +26,15 @@ class KSHViewController: UIViewController, AVAudioPlayerDelegate {
         prepareCatchAudio()
         prepareWinAudio()
         battleAudio?.play()
+        startBlinkAnimation()
     }
 
     @IBAction func characterTapped(_ sender: Any) {
         if isDefaultImage {
+            battleAudio?.stop()
             catchAudio?.stop()
             winAudio?.stop()
             messageImg.image = UIImage(named: "catchMessage")
-            battleAudio?.stop()
             catchAudio?.play()
             
         } else {
@@ -39,6 +42,29 @@ class KSHViewController: UIViewController, AVAudioPlayerDelegate {
             messageImg.image = UIImage(named: "defaultMessage")
         }
         isDefaultImage.toggle()
+    }
+    
+    private func startBlinkAnimation() {
+            count = 0
+            blinkAnimation()
+        }
+        
+    private func blinkAnimation() {
+        UIView.animate(withDuration: 0.1, delay: 0.0, options: [.autoreverse], animations: {
+            self.blackView.alpha = 0.0
+        }) { _ in
+            self.blackView.alpha = 1.0
+            self.count += 1
+            if self.count < 8 {
+                self.blinkAnimation()
+            } else {
+                self.stopBlinkAnimation()
+            }
+        }
+    }
+        
+    private func stopBlinkAnimation() {
+        self.blackView.removeFromSuperview()
     }
     
     private func prepareBattleAudio() {
