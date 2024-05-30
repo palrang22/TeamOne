@@ -11,7 +11,6 @@
 		E5BDFD752C06F83600AE58B4 /* TeamOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BDFD732C06F83500AE58B4 /* TeamOneCollectionViewCell.swift */; };
 		E5BDFD762C06F83600AE58B4 /* TeamOneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BDFD742C06F83600AE58B4 /* TeamOneList.swift */; };
 		E5CC90A62C08884C00CE038C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E5CC90A52C08884C00CE038C /* Lottie */; };
-		E5CC90A82C08893900CE038C /* SplashAnimationJ.json in Resources */ = {isa = PBXBuildFile; fileRef = E5CC90A72C08893800CE038C /* SplashAnimationJ.json */; };
 		E5CC90AA2C08895F00CE038C /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CC90A92C08895F00CE038C /* Splash.storyboard */; };
 		E5CC90AC2C08899600CE038C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CC90AB2C08899600CE038C /* SplashViewController.swift */; };
 		E76BB6592C0427FE00F166D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BB6582C0427FE00F166D1 /* AppDelegate.swift */; };
@@ -28,7 +27,6 @@
 		E76BB67B2C042B9A00F166D1 /* IHJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BB67A2C042B9A00F166D1 /* IHJViewController.swift */; };
 		E76BB67D2C042E5A00F166D1 /* KSHStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76BB67C2C042E5A00F166D1 /* KSHStoryboard.storyboard */; };
 		E76BB67F2C042E6800F166D1 /* KSHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BB67E2C042E6800F166D1 /* KSHViewController.swift */; };
-		E7E54FF12C05B36A00B4CD0C /* KSHSegController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E54FF02C05B36A00B4CD0C /* KSHSegController.swift */; };
 		E7E54FF32C05B39000B4CD0C /* KSHDexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E54FF22C05B39000B4CD0C /* KSHDexViewController.swift */; };
 		E7E550172C0840F500B4CD0C /* KSHInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E550162C0840F500B4CD0C /* KSHInfoViewController.swift */; };
 		E7E550192C0849DC00B4CD0C /* KSHMBTIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E550182C0849DC00B4CD0C /* KSHMBTIViewController.swift */; };
@@ -41,7 +39,6 @@
 		C4D108CB2C07120800CCB9D3 /* KSBStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KSBStoryboard.storyboard; sourceTree = "<group>"; };
 		E5BDFD732C06F83500AE58B4 /* TeamOneCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamOneCollectionViewCell.swift; sourceTree = "<group>"; };
 		E5BDFD742C06F83600AE58B4 /* TeamOneList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamOneList.swift; sourceTree = "<group>"; };
-		E5CC90A72C08893800CE038C /* SplashAnimationJ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SplashAnimationJ.json; path = ../../../Downloads/SplashAnimationJ.json; sourceTree = "<group>"; };
 		E5CC90A92C08895F00CE038C /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		E5CC90AB2C08899600CE038C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E76BB6552C0427FE00F166D1 /* TeamOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +57,6 @@
 		E76BB67A2C042B9A00F166D1 /* IHJViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHJViewController.swift; sourceTree = "<group>"; };
 		E76BB67C2C042E5A00F166D1 /* KSHStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KSHStoryboard.storyboard; sourceTree = "<group>"; };
 		E76BB67E2C042E6800F166D1 /* KSHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSHViewController.swift; sourceTree = "<group>"; };
-		E7E54FF02C05B36A00B4CD0C /* KSHSegController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSHSegController.swift; sourceTree = "<group>"; };
 		E7E54FF22C05B39000B4CD0C /* KSHDexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSHDexViewController.swift; sourceTree = "<group>"; };
 		E7E550162C0840F500B4CD0C /* KSHInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSHInfoViewController.swift; sourceTree = "<group>"; };
 		E7E550182C0849DC00B4CD0C /* KSHMBTIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSHMBTIViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +129,6 @@
 				E76BB66E2C04299400F166D1 /* IHJStoryboard.storyboard */,
 				E76BB67C2C042E5A00F166D1 /* KSHStoryboard.storyboard */,
 				C4D108CB2C07120800CCB9D3 /* KSBStoryboard.storyboard */,
-				E5CC90A72C08893800CE038C /* SplashAnimationJ.json */,
 				E76BB6612C04280100F166D1 /* Assets.xcassets */,
 				E76BB6662C04280100F166D1 /* Info.plist */,
 				E5B812DF2C0829CE001FEBB0 /* Supports */,
@@ -147,7 +142,6 @@
 			children = (
 				E76BB67E2C042E6800F166D1 /* KSHViewController.swift */,
 				E7E54FF22C05B39000B4CD0C /* KSHDexViewController.swift */,
-				E7E54FF02C05B36A00B4CD0C /* KSHSegController.swift */,
 				E7E550162C0840F500B4CD0C /* KSHInfoViewController.swift */,
 				E7E550182C0849DC00B4CD0C /* KSHMBTIViewController.swift */,
 			);
@@ -231,7 +225,6 @@
 				C4D108CC2C07120800CCB9D3 /* KSBStoryboard.storyboard in Resources */,
 				E7E5501D2C0851B500B4CD0C /* battlePokemon.mp3 in Resources */,
 				E76BB6622C04280100F166D1 /* Assets.xcassets in Resources */,
-				E5CC90A82C08893900CE038C /* SplashAnimationJ.json in Resources */,
 				E76BB66F2C04299400F166D1 /* IHJStoryboard.storyboard in Resources */,
 				E76BB66D2C04297A00F166D1 /* JSHStoryboard.storyboard in Resources */,
 				E7E5501E2C0851B500B4CD0C /* catchPokemon.mp3 in Resources */,
@@ -262,7 +255,6 @@
 				E5CC90AC2C08899600CE038C /* SplashViewController.swift in Sources */,
 				E76BB6752C042B6100F166D1 /* KSBViewController.swift in Sources */,
 				E76BB6592C0427FE00F166D1 /* AppDelegate.swift in Sources */,
-				E7E54FF12C05B36A00B4CD0C /* KSHSegController.swift in Sources */,
 				E76BB65B2C0427FE00F166D1 /* SceneDelegate.swift in Sources */,
 				E76BB67F2C042E6800F166D1 /* KSHViewController.swift in Sources */,
 			);
