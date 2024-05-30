@@ -16,13 +16,15 @@ class JSHViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var showHideButton: UIButton!
     @IBOutlet weak var hiddenView: UIView!
-    
-    
+    @IBOutlet weak var HideView: UIImageView!
+    @IBOutlet weak var HidenView: UIImageView!
+    @IBOutlet weak var WebView: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         hiddenView.isHidden = true
+        WebView.isHidden = true
         
         // Do any additional setup after loading the view.
         pageControl.numberOfPages = images.count
@@ -36,6 +38,9 @@ class JSHViewController: UIViewController {
             
             UIView.animate(withDuration: 0.3) {
                 self.hiddenView.isHidden = !shouldShow
+                self.WebView.isHidden = !shouldShow
+                self.HideView.isHidden = shouldShow
+                self.HidenView.isHidden = shouldShow
             }
             
             let buttonTitle = shouldShow ? "소 개" : "???"
