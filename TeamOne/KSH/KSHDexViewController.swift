@@ -9,10 +9,9 @@ import UIKit
 
 class KSHDexViewController: UIViewController, UIPageViewControllerDelegate{
     
-    private var pageViewController : KSHSegController!
-    
     private let avatars = ["characterFront", "characterRight", "characterBack", "characterLeft"]
     private var avatarsIdx = 0
+    private var pages = [UIViewController]()
     
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -20,12 +19,10 @@ class KSHDexViewController: UIViewController, UIPageViewControllerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadPageViewController()
-        configSegControl()
         avatarsIdx = 0
         avatarImage.image = UIImage(named: avatars[avatarsIdx])
-        //configSegController()
-        configViewController()
+        setupViewController()
+        configSegControl()
     }
     
     @IBAction func turnRightButton(_ sender: Any) {
@@ -43,43 +40,43 @@ class KSHDexViewController: UIViewController, UIPageViewControllerDelegate{
         avatarImage.image = UIImage(named: avatars[avatarsIdx])
     }
     
-//    private func configSegController(){
-//        segmentedControl.layer.cornerRadius = 20
-//        segmentedControl.clipsToBounds = true
-//    }
+    @objc func segmentChanged(_ sender: UISegmentedControl) {
+        let selectedIdx = sender.selectedSegmentIndex
+        switchViewController(to: pages[selectedIdx])
+    }
+    
+    private func setupViewController() {
+        let storyboard = UIStoryboard(name: "KSHStoryboard", bundle: nil)
+        let vc1 = storyboard.instantiateViewController(withIdentifier: "FirstPage")
+        let vc2 = storyboard.instantiateViewController(withIdentifier: "SecondPage")
+        let vc3 = storyboard.instantiateViewController(withIdentifier: "ThirdPage")
+        pages = [vc1, vc2, vc3]
+    }
+    
+    private func switchViewController(to newViewController: UIViewController) {
+        
+        for child in children {
+            child.willMove(toParent: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
+        
+        addChild(newViewController)
+        newViewController.view.frame = containerView.bounds
+        containerView.addSubview(newViewController.view)
+        newViewController.didMove(toParent: self)
+    }
+    
+    private func configSegControl() {
+        segmentedControl.addTarget(self, action: #selector(segmentChanged(_:)), for: .valueChanged)
+        switchViewController(to: pages[0])
+    }
+    
     
     private func configViewController() {
         containerView.layer.cornerRadius = 10
         containerView.layer.borderColor = UIColor.gray.cgColor
     }
     
-    private func loadPageViewController() {
-        pageViewController = storyboard?.instantiateViewController(withIdentifier: "KSHSegController") as? KSHSegController
-        pageViewController.delegate = self
-        pageViewController.willMove(toParent: self)
-        addChild(pageViewController)
-        containerView.addSubview(pageViewController.view)
-        pageViewController.view.frame = containerView.bounds
-        pageViewController.didMove(toParent: self)
-    }
-    
-    private func configSegControl() {
-        segmentedControl.addTarget(self, action: #selector(segmentChanged(_:)), for: .valueChanged)
-        pageViewController.setViewControllers(at: 0)
-    }
-    
-    @objc func segmentChanged(_ sender: UISegmentedControl) {
-        let index = sender.selectedSegmentIndex
-        pageViewController.setViewControllers(at: index)
-    }
-    
-    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        if completed {
-            if let currentViewController = pageViewController.viewControllers?.first,
-               let KSHPageViewController = pageViewController as? KSHSegController,
-               let index = KSHPageViewController.pages.firstIndex(of: currentViewController) {
-                segmentedControl.selectedSegmentIndex = index
-            }
-        }
-    }
+
 }
