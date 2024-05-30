@@ -11,8 +11,10 @@ class MainViewController: UIViewController {
         
         TeamOneCollectionView.delegate = self
         TeamOneCollectionView.dataSource = self
+ 
     }
 }
+
 
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -25,9 +27,10 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
         let teamOne = teamOneList[indexPath.item]
         cell.configure(teamOne)
-
+        
         return cell
     }
+    
     // 개별적으로 제작한 스토리뷰를 모델에서 불러오기
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedItem = teamOneList[indexPath.item]
@@ -48,7 +51,12 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
         let height = collectionView.bounds.height / 7
         return CGSize(width: width, height: height)
     }
-
+    // 섹션 인셋 설정
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let spacingTop: CGFloat = 24
+        return UIEdgeInsets(top: spacingTop, left: 0, bottom: 0, right: 0)
+    }
+    
 }
 
 // 헥사코드 쓰고싶어서
