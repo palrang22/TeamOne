@@ -2,9 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,18 +15,166 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDetailImage" translatesAutoresizingMaskIntoConstraints="NO" id="34C-zt-os7">
+                                <rect key="frame" x="79.666666666666686" y="117" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="LFM-gr-Aa3"/>
+                                    <constraint firstAttribute="height" constant="250" id="koN-Dr-C3v"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8Ec-Go-QvT" userLabel="text Content">
+                                <rect key="frame" x="76.666666666666686" y="375" width="240" height="280"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="임혜정" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Un-Vh-DQR">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="Xxu-UR-4c1"/>
+                                            <constraint firstAttribute="height" constant="30" id="aCw-rx-hCb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seoul, KR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwK-Wf-xXa">
+                                        <rect key="frame" x="0.0" y="38" width="240" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="qA1-GZ-wiu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5z1-Fi-AFS" userLabel="favorite">
+                                        <rect key="frame" x="0.0" y="70" width="240" height="28"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5u-G0-tl0">
+                                                <rect key="frame" x="0.0" y="0.0" width="74.666666666666671" height="28"/>
+                                                <color key="tintColor" red="0.023529411760000001" green="0.074509803920000006" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="#고양이">
+                                                    <backgroundConfiguration key="background" image="favoriteButtonImage"/>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpM-NE-oTH">
+                                                <rect key="frame" x="82.666666666666657" y="0.0" width="74.666666666666657" height="28"/>
+                                                <color key="tintColor" red="0.023529411760000001" green="0.074509803920000006" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="#애니">
+                                                    <backgroundConfiguration key="background" image="favoriteButtonImage"/>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjo-5d-E1W">
+                                                <rect key="frame" x="165.33333333333331" y="0.0" width="74.666666666666686" height="28"/>
+                                                <color key="tintColor" red="0.023529411760000001" green="0.074509803920000006" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="#악기">
+                                                    <backgroundConfiguration key="background" image="favoriteButtonImage"/>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="VRC-hP-iId"/>
+                                            <constraint firstAttribute="width" constant="240" id="cOR-fr-Q0R"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="220" text="누구랑 노느냐에 따라 달라지는 메타몽 MBTI입니다. 3개월 동안 잘 협동해서 즐거운 프로젝트 시간 되었으면 좋겠고 많은 관심과 사랑부탁드립니다 모두 화이팅⭐️" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jt-7A-yke">
+                                        <rect key="frame" x="0.0" y="106" width="240" height="174"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9Un-Vh-DQR" firstAttribute="centerX" secondItem="8Ec-Go-QvT" secondAttribute="centerX" id="0lc-KY-Qq6"/>
+                                    <constraint firstAttribute="width" constant="240" id="GDC-7g-8sN"/>
+                                    <constraint firstAttribute="height" constant="280" id="RFR-xx-xEr"/>
+                                    <constraint firstItem="iwK-Wf-xXa" firstAttribute="top" secondItem="9Un-Vh-DQR" secondAttribute="bottom" constant="8" id="Z2L-fL-ICR"/>
+                                    <constraint firstItem="5z1-Fi-AFS" firstAttribute="top" secondItem="iwK-Wf-xXa" secondAttribute="bottom" constant="8" id="eQ8-Q9-3Pi"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flowerImage1" translatesAutoresizingMaskIntoConstraints="NO" id="nWr-kn-aMv">
+                                <rect key="frame" x="299" y="107" width="101" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flowerImage2" translatesAutoresizingMaskIntoConstraints="NO" id="hgf-Gp-cV0">
+                                <rect key="frame" x="-21" y="351" width="109" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QOl-U0-xqI">
+                                <rect key="frame" x="77.666666666666686" y="678" width="250" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAw-rj-6m4">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="emailButtonImage" imageContentMode="scaleAspectFit"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="emailButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wNd-1a-jLk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cle-C4-BQg">
+                                        <rect key="frame" x="83.333333333333343" y="0.0" width="83.333333333333343" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="githubButtonImage" imageContentMode="scaleAspectFit"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="gitHubButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="652-ch-64n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MN-rv-fkl">
+                                        <rect key="frame" x="166.66666666666669" y="0.0" width="83.333333333333314" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="blogButtonImage" imageContentMode="scaleAspectFit"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="blogButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jX2-AL-1ZG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="m2S-z8-Hum"/>
+                                    <constraint firstAttribute="width" constant="250" id="nrc-i4-33d"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QOl-U0-xqI" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" constant="6" id="8CX-dy-tAY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="QOl-U0-xqI" secondAttribute="bottom" constant="40" id="AF0-WW-rwx"/>
+                            <constraint firstItem="8Ec-Go-QvT" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="O6C-hM-FOi"/>
+                            <constraint firstItem="8Ec-Go-QvT" firstAttribute="top" secondItem="34C-zt-os7" secondAttribute="bottom" constant="8" id="ooo-Tu-8WW"/>
+                            <constraint firstItem="34C-zt-os7" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="117" id="q5S-PH-qsM"/>
+                            <constraint firstItem="34C-zt-os7" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" constant="8" id="vFp-iw-ynT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonStackView" destination="QOl-U0-xqI" id="fVg-f3-rn6"/>
+                        <outlet property="contentView" destination="8Ec-Go-QvT" id="gy5-Rs-QR7"/>
+                        <outlet property="flowerImage" destination="nWr-kn-aMv" id="R0a-LR-qB7"/>
+                        <outlet property="flowerImage2" destination="hgf-Gp-cV0" id="h3Z-2D-DhU"/>
+                        <outlet property="profileDetailImageView" destination="34C-zt-os7" id="d9j-o4-bEl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="-34"/>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="blogButtonImage" width="545" height="538"/>
+        <image name="emailButtonImage" width="545" height="538"/>
+        <image name="favoriteButtonImage" width="133" height="54"/>
+        <image name="flowerImage1" width="319" height="646"/>
+        <image name="flowerImage2" width="340" height="636"/>
+        <image name="githubButtonImage" width="545" height="538"/>
+        <image name="profileDetailImage" width="819" height="825"/>
     </resources>
 </document>
