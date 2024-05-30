@@ -13,11 +13,11 @@ class IHJViewController: UIViewController {
     
     @IBOutlet weak var flowerImage: UIImageView!
     @IBOutlet weak var flowerImage2: UIImageView!
-    
     @IBOutlet weak var contentView: UIStackView!
     @IBOutlet weak var profileDetailImageView: UIImageView!
-    
     @IBOutlet weak var buttonStackView: UIStackView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +32,6 @@ class IHJViewController: UIViewController {
         flowerImage2.fadeIn(duration: 2.0)
         contentView.fadeIn(duration: 2.0)
     }
-    
     
     
     @IBAction func emailButton(_ sender: Any) {
@@ -57,11 +56,10 @@ class IHJViewController: UIViewController {
             present(safariVC, animated: true, completion: nil)
         }
     }
-    
-    
-    
 }
 
+
+//요소 페이드인 애니메이션
 extension UIView {
     func fadeIn(duration: TimeInterval = 2.0, delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
         self.alpha = 0.0

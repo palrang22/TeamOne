@@ -101,11 +101,11 @@
                                 <rect key="frame" x="36" y="101" width="320" height="323"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="고양이" translatesAutoresizingMaskIntoConstraints="NO" id="Afi-mA-kI0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ksbCat" translatesAutoresizingMaskIntoConstraints="NO" id="Afi-mA-kI0">
                                 <rect key="frame" x="49" y="637" width="170" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="도마뱀" translatesAutoresizingMaskIntoConstraints="NO" id="Oe6-x7-qug">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ksbLizard" translatesAutoresizingMaskIntoConstraints="NO" id="Oe6-x7-qug">
                                 <rect key="frame" x="235" y="637" width="96" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -138,9 +138,9 @@
     </scenes>
     <resources>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="104"/>
+        <image name="ksbCat" width="4032" height="3024"/>
+        <image name="ksbLizard" width="3024" height="4032"/>
         <image name="solby" width="1291" height="1291"/>
-        <image name="고양이" width="4032" height="3024"/>
-        <image name="도마뱀" width="3024" height="4032"/>
         <systemColor name="systemGray6Color">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
