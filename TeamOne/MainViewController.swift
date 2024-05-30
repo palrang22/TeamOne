@@ -11,6 +11,7 @@ class MainViewController: UIViewController {
         
         TeamOneCollectionView.delegate = self
         TeamOneCollectionView.dataSource = self
+        TeamOneCollectionView.layer.backgroundColor = UIColor.clear.cgColor
  
     }
 }
@@ -27,7 +28,6 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
         let teamOne = teamOneList[indexPath.item]
         cell.configure(teamOne)
-        
         return cell
     }
     
@@ -42,6 +42,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerID)
         navigationController?.pushViewController(viewController, animated: true)
     }
+    
 }
 
 // 레이아웃 설정
