@@ -21,7 +21,7 @@ class TeamOneCollectionViewCell: UICollectionViewCell {
     func configure(_ teamOne: TeamOneList){
         nameLabel.text = teamOne.name
         thumbnail.image = UIImage(named: teamOne.profileImage)
-        thumbnail.layer.cornerRadius = thumbnail.frame.size.width / 2.4
+        thumbnail.layer.cornerRadius = thumbnail.frame.size.width / 2.0
         comment.text = teamOne.comment
     }
     private func setupCellAppearance() {
