@@ -23,8 +23,11 @@ class TeamOneCollectionViewCell: UICollectionViewCell {
         thumbnail.image = UIImage(named: teamOne.profileImage)
         thumbnail.layer.cornerRadius = thumbnail.frame.size.width / 2.0
         comment.text = teamOne.comment
+
+        
     }
     private func setupCellAppearance() {
+        
         
         self.contentView.layer.cornerRadius = 10
         self.layer.cornerRadius = 10
